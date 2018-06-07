@@ -15,7 +15,7 @@ from os.path import isfile, join
 from mysql.connector import errorcode
 from mysql.connector.connection import MySQLConnection
 
-from vorüberlegungen import *
+from timings import *
 
 # =================
 # = Configuration =
@@ -396,7 +396,7 @@ def get_sensor_data(timestamp, sensor, db=None):
     :return: sensor data
     :rtype: list
     """
-    logging.debug("Getting data from sensor '%s' at %s" % (sensor['name'], str(timestamp)))
+    logging.info("Getting data from sensor '%s' at %s" % (sensor['name'], str(timestamp)))
     start = time.time()
 
     sensor_data = []

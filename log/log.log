@@ -16,3 +16,21 @@
 [11:48:03.599] [DEBUG] Execute query "SELECT ITEM_VALUE, READ_TIME FROM opc_data WHERE ITEM_NAME = 'ET 200SP-Station_1.ET200SP.OPC_DATA.Messwerte.BANDWAAGE' AND READ_TIME < '2018-05-24 13:56:39' ORDER BY READ_TIME DESC LIMIT 10"
 [11:48:03.628] [INFO] Got data for sensor 'Bandwaage' in 0.02892279624938965 seconds
 [11:48:03.629] [INFO] Program finished in 40.01666212081909 seconds
+[11:51:40.991] [DEBUG] Application started
+[11:51:41.4] [INFO] Connected to mysql at root@127.0.0.1:3306/kipro
+[11:51:41.5] [INFO] Getting line speeds from database for Knickband, Zuführband
+[11:51:41.402] [DEBUG] Executed query "SELECT ITEM_VALUE as value, READ_TIME as time FROM `opc_data` WHERE `ITEM_NAME` = 'ET 200SP-Station_1.ET200SP.OPC_DATA.Foerderbaender.Knickband.Istwert_Drehzahl' ORDER BY READ_TIME DESC LIMIT 500" and got 500 results
+[11:51:41.704] [DEBUG] Executed query "SELECT ITEM_VALUE as value, READ_TIME as time FROM `opc_data` WHERE `ITEM_NAME` = 'ET 200SP-Station_1.ET200SP.OPC_DATA.Foerderbaender.Aufgabebunker.Istwert_Drehzahl' ORDER BY READ_TIME DESC LIMIT 500" and got 500 results
+[11:51:41.705] [DEBUG] Rename analyser files
+[11:51:41.822] [INFO] Getting data from sensor 'Kinect' at 2018-05-24 13:56:03.973000
+[11:51:43.378] [INFO] Got data for sensor 'Kinect' in 1.5557928085327148 seconds
+[11:51:43.380] [INFO] Getting data from sensor 'x102' at 2018-05-24 13:56:05.016000
+[11:52:16.608] [ERROR] Image #15288 incomplete. Returning anyways
+[11:52:16.610] [INFO] Got data for sensor 'x102' in 33.22982382774353 seconds
+[11:52:16.612] [INFO] Getting data from sensor 'x101' at 2018-05-24 13:56:05.016000
+[11:52:16.612] [DEBUG] Execute query "SELECT * FROM data_analyser_x101_daten WHERE time < '2018-05-24 13:56:07' ORDER BY time DESC LIMIT 10"
+[11:52:16.618] [INFO] Got data for sensor 'x101' in 0.005987882614135742 seconds
+[11:52:16.619] [INFO] Getting data from sensor 'Bandwaage' at 2018-05-24 13:56:37.937000
+[11:52:16.619] [DEBUG] Execute query "SELECT ITEM_VALUE, READ_TIME FROM opc_data WHERE ITEM_NAME = 'ET 200SP-Station_1.ET200SP.OPC_DATA.Messwerte.BANDWAAGE' AND READ_TIME < '2018-05-24 13:56:39' ORDER BY READ_TIME DESC LIMIT 10"
+[11:52:16.649] [INFO] Got data for sensor 'Bandwaage' in 0.029925823211669922 seconds
+[11:52:16.650] [INFO] Program finished in 35.65884590148926 seconds
