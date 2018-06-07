@@ -1,0 +1,18 @@
+[11:47:23.613] [DEBUG] Application started
+[11:47:23.625] [INFO] Connected to mysql at root@127.0.0.1:3306/kipro
+[11:47:23.626] [INFO] Getting line speeds from database for Knickband, Zuführband
+[11:47:24.261] [DEBUG] Executed query "SELECT ITEM_VALUE as value, READ_TIME as time FROM `opc_data` WHERE `ITEM_NAME` = 'ET 200SP-Station_1.ET200SP.OPC_DATA.Foerderbaender.Knickband.Istwert_Drehzahl' ORDER BY READ_TIME DESC LIMIT 500" and got 500 results
+[11:47:24.535] [DEBUG] Executed query "SELECT ITEM_VALUE as value, READ_TIME as time FROM `opc_data` WHERE `ITEM_NAME` = 'ET 200SP-Station_1.ET200SP.OPC_DATA.Foerderbaender.Aufgabebunker.Istwert_Drehzahl' ORDER BY READ_TIME DESC LIMIT 500" and got 500 results
+[11:47:24.536] [DEBUG] Rename analyser files
+[11:47:24.645] [DEBUG] Getting data from sensor 'Kinect' at 2018-05-24 13:56:03.973000
+[11:47:26.538] [INFO] Got data for sensor 'Kinect' in 1.891587734222412 seconds
+[11:47:26.541] [DEBUG] Getting data from sensor 'x102' at 2018-05-24 13:56:05.016000
+[11:48:03.589] [ERROR] Image #15288 incomplete. Returning anyways
+[11:48:03.591] [INFO] Got data for sensor 'x102' in 37.04989147186279 seconds
+[11:48:03.593] [DEBUG] Getting data from sensor 'x101' at 2018-05-24 13:56:05.016000
+[11:48:03.593] [DEBUG] Execute query "SELECT * FROM data_analyser_x101_daten WHERE time < '2018-05-24 13:56:07' ORDER BY time DESC LIMIT 10"
+[11:48:03.598] [INFO] Got data for sensor 'x101' in 0.0049860477447509766 seconds
+[11:48:03.599] [DEBUG] Getting data from sensor 'Bandwaage' at 2018-05-24 13:56:37.937000
+[11:48:03.599] [DEBUG] Execute query "SELECT ITEM_VALUE, READ_TIME FROM opc_data WHERE ITEM_NAME = 'ET 200SP-Station_1.ET200SP.OPC_DATA.Messwerte.BANDWAAGE' AND READ_TIME < '2018-05-24 13:56:39' ORDER BY READ_TIME DESC LIMIT 10"
+[11:48:03.628] [INFO] Got data for sensor 'Bandwaage' in 0.02892279624938965 seconds
+[11:48:03.629] [INFO] Program finished in 40.01666212081909 seconds
